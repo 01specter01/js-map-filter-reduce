@@ -29,3 +29,15 @@ const filterEvens = (arr) => {
     });
 };
 console.log(filterEvens(numbers));
+
+console.log("4. Freunde filtern");
+const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
+
+const filterItems = (findFriend) => {
+    return findFriend.filter((q) => {
+        return q.includes("e");
+    });
+};
+console.log(filterItems(friends));
+//console.log(filterItems(friends, "ka")); // ["Rika"];
+//console.log(filterItems(friends, "e")); // ["Jenna", "Bleda", "Oliver"];
