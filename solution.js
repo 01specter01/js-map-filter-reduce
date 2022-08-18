@@ -50,3 +50,12 @@ const sum = arri.reduce((prev, curr) => {
     return prev + curr;
 }, 0);
 console.log(sum);
+
+console.log("6. Quadratwurzel");
+
+const numberRow = (Quadratwurzel) => {
+    return Quadratwurzel.map((el) => {
+        return Math.sqrt(el);
+    });
+};
+console.log(numberRow([25, 36, 81]));
