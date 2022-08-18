@@ -19,3 +19,13 @@ const plus1ArrayOfNumbers = arrayOfNumbers.forEach((el) => {
     console.log(el);
 });
 plus1ArrayOfNumbers;
+
+console.log("3. Gerade Zahlen filtern");
+const numbers = [1, 2, 3, 11, 12, 13]; //returned [2,12]
+//filterEvens([22, 2, 31, 110, 6, 13]); //returned [22,2,110,6]
+const filterEvens = (arr) => {
+    return arr.filter((x) => {
+        return x % 2 === 0;
+    });
+};
+console.log(filterEvens(numbers));
