@@ -7,15 +7,15 @@ const orders = [
     { amount: 325 },
 ];
 
-const calcSums = (someofAll) =>
-    someofAll.reduce((sums, val) => {
-        Object.keys(val).forEach(
-            (v) =>
-                (sums[`sum-${v}`] = !sums[`sum-${v}`]
-                    ? val[v]
-                    : sums[`sum-${v}`] + val[v])
-        );
-        return sums;
-    }, {});
+const sumOfall = (sum) => {
+    return sum.map((x) => x.amount).reduce((prev, curr) => prev + curr, 0);
+};
+console.log(sumOfall(orders));
 
-console.log(calcSums(orders));
+console.log("2. Inkrementieren um 1");
+const arrayOfNumbers = [3, 45, 6, 56, 7, 9];
+const plus1ArrayOfNumbers = arrayOfNumbers.forEach((el) => {
+    el += 1;
+    console.log(el);
+});
+plus1ArrayOfNumbers;
