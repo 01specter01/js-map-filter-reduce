@@ -41,3 +41,12 @@ const filterItems = (findFriend) => {
 console.log(filterItems(friends));
 //console.log(filterItems(friends, "ka")); // ["Rika"];
 //console.log(filterItems(friends, "e")); // ["Jenna", "Bleda", "Oliver"];
+
+console.log("5. Summe");
+
+const arri = [1, 2, 3, 4, 5];
+
+const sum = arri.reduce((prev, curr) => {
+    return prev + curr;
+}, 0);
+console.log(sum);
